@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>D Link - update</title>
+    <link rel="stylesheet" href="global.main.css" type="text/css" media="all" />
+  </head>
+  <body class="flex justify-center text-gray-700 duration-500" id="body">
+    <section class="flex flex-col justify-center w-afull">
+      <nav class="flex justify-between w-full py-6">
+        <div class="left flex items-end gap-4">
+          <h2 class="text-xl font-bold hover:text-red-600 active:text-red-600">
+            <a href="/index.html">//D'sLink</a>
+          </h2>
+          <a
+            href="/update.html"
+            class="updatel hover:text-red-600 active:text-red-600"
+            >//Update</a
+          >
+        </div>
+        <div class="right">
+          <div class="toggle cursor-pointer">
+            <div class="night animate-pulse" id="night" onclick="to_dark()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-moon-stars"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+                />
+                <path
+                  d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"
+                />
+                <path d="M19 11h2m-1 -1v2" />
+              </svg>
+            </div>
+            <div
+              class="light hidden animate-spin"
+              id="light"
+              onclick="to_light()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-sun"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="4" />
+                <path
+                  d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="update flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-3"
+        id="update_loader"
+      ></div>
+      <footer class="h-40 flex justify-center items-center">
+        <p>
+          Copyright &copy; 2022
+          <a href="https://daire.ru.org/" class="text-red-500 font-bold"
+            >dai re</a
+          >. All Rights Reserved.
+        </p>
+      </footer>
+    </section>
+    <script src="main.up.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
