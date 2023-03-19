@@ -28,9 +28,10 @@ if (check_mode == "dark") {
 data_post = [
   { 0: "still no updates !" },
   { 1: "Sunmori 13 November uploaded to Google drive !" },
+  { 2: "Sunmori 19 maret uploaded to Google drive ! "}
 ];
-data_color = [{ 0: "green" }, { 1: "blue" }];
-data_warn = [{ 0: "success!" }, { 1: "info!" }];
+data_color = [{ 0: "green" }, { 1: "blue" }, { 2: "blue"}];
+data_warn = [{ 0: "success!" }, { 1: "info!" }, { 2: "info!"}];
 
 var content_list = "";
 var x = data_post.length;
